@@ -1,0 +1,466 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif; */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/*
+  This site is designed using Mobile-first approach
+*/
+
+
+.header {
+  background-color: #2E323F;
+  height: auto;
+}
+
+.main {
+  /* border: 2px solid red; */
+  /* width: 80%; */
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Styling the navigation bar */
+.nav {
+    width: 100%;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #3B4050;
+    color: white;
+    transition: opacity 250ms ease;
+
+    position: absolute;
+    left: .3rem;
+    top: .3rem;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    padding-bottom: .2rem;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.logo {
+    height: 30px;
+    margin: .6em 0;
+}
+
+.nav__list {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.nav__item {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  margin-top: .6rem;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  color: white;
+}
+
+.nav__link--button {
+  background-color: #A59678;
+  border-radius: 12px;
+  color: #FFF;
+  padding: 2px 8px;
+}
+
+.nav__link--button:focus,
+.nav__link--button:hover {
+  opacity: .75
+}
+/* Styling the navigation bar -- END*/
+
+/* Styling the hero section */
+.hero {
+  background-color: #3B4050;
+}
+
+.hero__heading {
+  font-size: 1.7rem;
+  line-height: 4.2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hero__heading--light {
+  color: #FFF;
+}
+
+.hero__heading--dark {
+  color: #A59678;
+}
+
+.main__info {
+  color: #FFFFFF;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.main__info__text {
+  font-size: 1rem;
+  margin: 1rem auto;
+}
+
+.main__btn {
+  background-color: #A59678;
+  border: 0;
+  border-radius: 30px;
+  padding: 2px 18px;
+  margin: 0.2rem 0 2.4rem;
+}
+
+.main__btn__link {
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin-top: .6rem;
+  font-size: 1.8rem;
+
+}
+
+.main__btn__link:focus,
+.main__btn__link:hover {
+  opacity: .75;
+}
+
+/* Styling section1 */
+.section1 {
+  background-color: #ebe9f6;
+  text-align: center;
+  padding: 2rem 0 4rem;
+}
+
+.section1__heading {
+  color: #A59678;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 0 0;
+}
+
+.section1__text {
+  font-size: 1rem;
+  margin: .6rem auto;
+  line-height: 1.6em;
+}
+
+/* Styling section2 */
+.section2-content {
+  margin: 3rem auto;
+}
+
+.section2__heading {
+  color: #A59678;
+  font-size: 1.55rem;
+  margin: .8rem auto;
+}
+
+.section2__text {
+  margin: 1rem auto;
+}
+
+.aside-block {
+  background-color: #3B4050;
+  color: white;
+  text-align: center;
+  margin: 1rem auto 2rem;
+}
+
+.aside__heading {
+  font-size: 1.4rem;
+  padding-top: 1.2rem;:
+}
+
+.aside__text {
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.8rem 0 2rem;
+  line-height: 1.5rem;
+}
+
+
+/* Styling footer */
+.footer {
+  background-color: #3B4050;
+  color: white;
+  padding: 3.5rem 0;
+}
+
+.footer-links-col {
+  padding: 1.4rem 0;
+}
+
+.footer__heading {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 3rem;
+}
+
+.footer__small-heading {
+  font-size: 1.6rem;
+  padding: .8rem 0;
+  color: #A59678;
+}
+
+.footer__text {
+  line-height: 1.8rem;
+}
+
+.footer-links__link {
+  margin: .6rem auto;
+}
+
+
+/*
+    First breakpoint
+    Designing wesite for tablet viewport
+ */
+
+@media (min-width: 700px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    position: absolute;
+    width: auto;
+  }
+
+  .nav {
+    display: flex;
+    visibility: visible;
+    position: relative;
+    height: auto;
+    justify-content: flex-end;
+    width: 95%;
+  }
+
+  .nav__list {
+    margin: .5rem 0 .5rem 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 2rem;
+  }
+
+  .nav__item {
+    margin-left: 1.5rem;
+  }
+
+/* Styling hero section */
+  .hero {
+    padding: 2.6rem 0;
+  }
+
+  .hero__heading {
+    font-size: 2.2rem;
+    line-height: 5.3rem;
+    text-align: left;
+  }
+  .main__info {
+    align-self: center;
+  }
+
+  .main__info__text {
+    width: 75%;
+    line-height: 1.8em;
+    text-align: left;
+  }
+
+  .main__btn {
+    margin-top: 2em;
+    text-align: left;
+  }
+
+  .section1__col {
+    width: 30%;
+  }
+
+  /* Styling section2*/
+  .section2 {
+    flex-direction: column;
+  }
+
+  .section2-aside {
+    /* width: 35% */
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  .aside-block {
+    width: 32%;
+    margin: 0;
+  }
+
+  .section2__text {
+    padding: 1rem 0;
+  }
+
+  /* Styling footer */
+  .footer-links-col {
+    width: 32%;
+  }
+
+  .footer-links__link {
+    margin-bottom: 1rem;
+  }
+}
+
+
+/*
+    First breakpoint
+    Designing wesite for desktop viewport
+ */
+
+@media (min-width: 1000px) {
+  .section2 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section2-content {
+    width: 60%;
+  }
+
+
+  .section2-aside {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+  }
+
+  .aside-block {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .aside-block + .aside-block {
+    margin-top: 2rem;
+  }
+
+  .footer__rest {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-about {
+    width: 40%;
+  }
+
+  .footer-links {
+    width: 55%;
+  }
+
+  .footer-links-col {
+    padding: 0;
+  }
+
+  .footer__small-heading {
+    padding: 2rem 0 1rem;
+  }
+
+  .footer__text {
+    line-height: 2rem;
+  }
+
+}
